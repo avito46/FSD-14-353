@@ -14,10 +14,10 @@ const readContent=async(fname)=>{
 }
 
 const appendData=async(fname,content)=>{  
- await appendData(fname,"\n"+content)
+ await appendFile(fname,"\n"+content)
  console.log("data appended")
 }
 await addContent("notes.txt" , "FS is easy in JS")
 console.log("Contents\n",await readContent("notes.txt"))
-await appendFile('notes.txt',"it can add,read and update content")
+await appendData('notes.txt',"it can add,read and update content")
 console.log("Updated content\n",await readContent("notes.txt"))
