@@ -21,8 +21,8 @@ main()*/
 //function by stack where f3 enters at last that is why it is called first
 //javascript is single and synchronous threaded (single threaded-> ek baar mei ek hi kaam kar sakta hai)
 //in asynchronous we use we use event loop to manage the call stack
-/* tyoes of asynchronous calls 
-    1)set time-out 2)set immediate 3)process.next Tick 4) set internal                  */
+/* types of asynchronous calls 
+    1)set time-out 2)set immediate 3)process.next Tick 4) set internal*/
 const f1 = () => {
   console.log("f1 starts");
   f2();
