@@ -4,5 +4,11 @@
     "name": "S24 ULTRA",
     "price": 90000,
     "qty": 4
+  },
+  {
+    "id": 69,
+    "name": "S24",
+    "price": 69000,
+    "qty": 5
   }
 ]

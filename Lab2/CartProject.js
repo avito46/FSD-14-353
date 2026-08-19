@@ -49,6 +49,18 @@ const updateQuantity=async(pid)=>{
       console.log(`Product with ${pid} not found`)
      }
 }
+const removeProduct=async (pid)=> {
+  const cart=await getCart();
+  const newcart=cart.filter((item)=>item.id !==pid)
+  if(newcart.length !=cart.length)
+  {
+    await saveCart(newcart)
+    console.log(`Product removed from 🛒`)
+  }
+  else{
+    console.log(`Product with ${pid} not found`)
+  }
+}
 
 
 const main = async () => {

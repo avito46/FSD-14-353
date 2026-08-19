@@ -8,7 +8,7 @@ server.on('request',(req,res)=>{
 })*/
 
 const server=http.createServer((req,res)=>{
-    res.end("<h2>Welcome to server side</h2>")
+    res.end("<h1>Welcome to server side</h1>")
 })
 
 server.listen(5000,()=>{
