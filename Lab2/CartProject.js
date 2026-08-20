@@ -6,8 +6,8 @@ import { readFile, writeFile } from "fs/promises";
 const FILE = "product.json";
 
 const getCart = async () => {
-  const data = await readFile(FILE, "utf-8");
-  return JSON.parse(data);
+  const data = await readFile(FILE, "utf-8");//readfile->returns data as string
+  return JSON.parse(data);//Converts JSON string → JavaScript object/array.
 };
 
 const saveCart = async (cart) => {
